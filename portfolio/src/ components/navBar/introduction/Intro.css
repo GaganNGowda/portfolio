@@ -1,0 +1,91 @@
+#intro {
+  width: 100vw;
+  height: calc(100vh-5rem);
+  max-width: 90rem;
+  overflow: hidden;
+  margin: 1rem auto;
+  position: relative;
+}
+.introContent {
+  height: 100vh;
+  width: 100vh;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introPara {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.name {
+  color: yellow;
+}
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.btnimg {
+  margin: 0 0.25rem;
+  height: 1rem;
+  object-fit: cover;
+}
+.pic {
+  position: absolute;
+  top: 1rem;
+  z-index: -2;
+  object-fit: cover;
+  height: 85rem;
+  right: -3rem;
+}
+
+@media screen and (max-width: 1155px) {
+  .introContent {
+    font-size: 10vw;
+  }
+  .introPara {
+    font-size: 2vw;
+    font-weight: 200;
+    color: burlywood;
+  }
+  .description {
+    color: burlywood;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 540px) {
+  .introContent {
+    font-size: 11vw;
+  }
+  .description {
+    color: burlywood;
+    font-size: 10vw;
+  }
+  .pic {
+    right: -7rem;
+  }
+  .introPara {
+    font-size: 3vw;
+    font-weight: 200;
+    color: burlywood;
+    max-width: 56%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pic {
+    right: -10rem;
+  }
+}
