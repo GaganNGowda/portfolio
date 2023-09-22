@@ -1,0 +1,34 @@
+#works {
+  min-height: calc(100vh - 5rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.worksTitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.worksImgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 65rem;
+}
+.worksImg {
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .worksImg {
+    height: 15rem;
+  }
+}

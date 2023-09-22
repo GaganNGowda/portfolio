@@ -1,8 +1,8 @@
 import React from 'react'
 import './Intro.css'
 import {Link} from 'react-scroll'
-import background from '../../../assets/pic.png'
-import buttonImg from '../../../assets/hireme.png'
+import background from '../../assets/pic.png'
+import buttonImg from '../../assets/hireme.png'
 function Intro() {
   return (
     <section id='intro'>

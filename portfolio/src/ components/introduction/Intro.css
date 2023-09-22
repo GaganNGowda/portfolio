@@ -1,13 +1,13 @@
 #intro {
   width: 100vw;
-  height: calc(100vh-5rem);
+  height: calc(100vh - 5rem);
   max-width: 90rem;
   overflow: hidden;
   margin: 1rem auto;
   position: relative;
 }
 .introContent {
-  height: 100vh;
+  height: 90vh;
   width: 100vh;
   font-size: 3rem;
   font-weight: 500;
@@ -22,7 +22,7 @@
 }
 .introPara {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .name {
   color: yellow;
@@ -35,6 +35,7 @@
   border-radius: 2rem;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .btnimg {
   margin: 0 0.25rem;
@@ -43,16 +44,16 @@
 }
 .pic {
   position: absolute;
-  top: 1rem;
-  z-index: -2;
+  top: 0;
+  z-index: -1;
   object-fit: cover;
-  height: 85rem;
-  right: -3rem;
+  height: 90vh;
+  right: 0;
 }
 
 @media screen and (max-width: 1155px) {
   .introContent {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .introPara {
     font-size: 2vw;
@@ -63,7 +64,7 @@
     color: burlywood;
   }
   .hello {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
   }
 }
 @media screen and (max-width: 540px) {
@@ -79,13 +80,23 @@
   }
   .introPara {
     font-size: 3vw;
-    font-weight: 200;
+    font-weight: 400;
     color: burlywood;
     max-width: 56%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .pic {
-    right: -10rem;
+    right: -5rem;
+  }
+  .name {
+    color: tomato;
+  }
+  .introText {
+    color: burlywood;
+  }
+  .hello {
+    font-size: 5.5vw;
+    font-weight: 400;
   }
 }
