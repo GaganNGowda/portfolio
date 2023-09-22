@@ -5,6 +5,7 @@ import NavBar from "./ components/navBar/NavBar";
 import Skill from "./ components/skills/Skill";
 import Works from "./ components/works/Works";
 import Education from './ components/education/Education'
+import './App.css'
 function App() {
   return (
     <div className="App">
