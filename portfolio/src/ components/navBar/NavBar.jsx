@@ -13,6 +13,7 @@ function NavBar() {
               <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500}  className='desktopMenuListItem'>Home</Link>
               <Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
               <Link  activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Portfolio</Link>
+              <Link  activeClass='active' to='education' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Education</Link>
                <Link  activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Connect</Link>
           </div>
       <button className='desktopMenuButton' onClick={() => {
@@ -26,6 +27,7 @@ function NavBar() {
               <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>Home</Link>
               <Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>About</Link>
               <Link  activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>Portfolio</Link>
+              <Link  activeClass='active' to='education' spy={true} smooth={true} offset={-100} duration={500}  onClick={()=>setshowMenu(false)} className='listItem'>Education</Link>
         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>Connect</Link>
           </div>
     </nav>

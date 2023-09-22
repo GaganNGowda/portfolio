@@ -1,7 +1,6 @@
 import {React,useRef} from 'react'
 import './contact.css'
-import FaceBook from '../../assets/facebook-icon.png'
-import twitter from '../../assets/twitter.png'
+import linkedin from '../../assets/linkedin.png'
 import instagram from '../../assets/instagram.png'
 import emailjs from '@emailjs/browser';
 function Contact() {
@@ -28,9 +27,12 @@ function Contact() {
               <textarea name="message" cols="30" rows="5" className="message" placeholder='Your message' />
               <button className="submit" type='submit' value='Send'>Submit</button>
               <div className="links">
-                  <img src={FaceBook} alt="FaceBook" className="link" />
-                  <img src={ twitter} alt="twitter" className="link" />
+                  <a href='https://www.linkedin.com/in/gagan-n-gowda-6a5977145/'>
+                  <img src={ linkedin} alt="linkedin" className="link" />
+                  </a>
+                  <a href='https://www.instagram.com/gagan.n.gowda/'>
                   <img src={instagram} alt="instagram" className="link" />
+                  </a>
               </div>
           </form>
     </section>

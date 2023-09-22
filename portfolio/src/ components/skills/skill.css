@@ -9,6 +9,7 @@
   text-align: center;
   margin: 0 auto;
   height: 100vh;
+  overflow-y:auto;
 }
 .skillTitle {
   font-size: 3rem;
@@ -27,6 +28,7 @@
   width: 100vw;
   max-width: 80%;
   text-align: left;
+  cursor: pointer;
 }
 .skillBar {
   margin: 1rem;
@@ -34,6 +36,11 @@
   border-radius: 0.5rem;
   display: flex;
   background: rgb(50, 50, 50);
+}
+.skillListBar{
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
 }
 .skillBarImage {
   object-fit: cover;
@@ -44,6 +51,9 @@
 .skillBarText > p {
   font-size: 1rem;
   font-weight: 200;
+}
+.dropDown{
+  margin-left: auto;
 }
 
 @media screen and (max-width: 720px) {

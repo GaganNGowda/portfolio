@@ -1,0 +1,75 @@
+#education {
+  min-height: calc(100vh - 5rem);
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.educationTitle {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+.year {
+  font-size: small;
+  font-weight: 100;
+}
+
+.conteudo {
+  width: 100vw;
+  display: contents;
+  max-width: 60vw;
+}
+.carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  flex-wrap: wrap;
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  scroll-snap-align: start;
+  border-radius: 30px;
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.level{
+margin-bottom: 3rem;
+font-size: 20px;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
+}
+.card:nth-child(2) {
+  background: linear-gradient(-229deg, #ff70af, #5fa8f5);
+}
+.card:nth-child(3) {
+  background: linear-gradient(-229deg, #d4e333, #5fa8f5);
+}
+@media screen and (max-width:1100px) {
+  .carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:700px) {
+  .carrousel {
+    margin: 0 1rem;
+    display: grid;
+    justify-content: start;
+  }
+}

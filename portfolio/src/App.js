@@ -4,6 +4,7 @@ import Intro from "./ components/introduction/Intro";
 import NavBar from "./ components/navBar/NavBar";
 import Skill from "./ components/skills/Skill";
 import Works from "./ components/works/Works";
+import Education from './ components/education/Education'
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Intro />
       <Skill />
       <Works />
+      <Education/>
       <Contact />
       <Footer />
     </div>

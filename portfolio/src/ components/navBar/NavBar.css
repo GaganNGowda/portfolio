@@ -22,8 +22,8 @@
   cursor: pointer;
 }
 .desktopMenuListItem:hover {
-  color: yellow;
-  border-bottom: 3px solid yellow;
+  color: burlywood;
+  border-bottom: 3px solid burlywood;
   padding-bottom: 0.5rem;
 }
 .desktopMenuButton {
@@ -37,6 +37,10 @@
   padding: 0 1rem;
   border-radius: 2rem;
   height: 2rem;
+}
+.desktopMenuButton:hover{
+  background: burlywood;
+  padding: 0.1rem 1.1rem;
 }
 .desktopMenuImg {
   height: 1rem;
