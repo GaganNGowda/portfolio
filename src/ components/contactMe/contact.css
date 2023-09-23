@@ -64,3 +64,6 @@
   color: black;
   cursor: pointer;
 }
+.error{
+  color: red;
+}
