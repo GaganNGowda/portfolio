@@ -103,8 +103,7 @@ white-space: nowrap;
 }
 @media screen and (max-width: 500px){
   #skills {
-    height: fit-content;
-    overflow-y: hidden;
+    overflow-y: scroll;
   }
   .skillBar {
 font-size: 0.7rem;
