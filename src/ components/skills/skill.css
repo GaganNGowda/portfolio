@@ -88,14 +88,14 @@
   }
   .skillListBar {
     margin: 0 2rem;
-    width: 24rem;
+    width: 21rem;
     display: grid;
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
   }
   .skillBarChildText {
-margin: 0 1rem;
+margin: 0 0.5rem;
 padding-left: 2rem;
 font-size: 0.6rem;
 white-space: nowrap;
