@@ -36,20 +36,43 @@
   display: flex;
   background: rgb(50, 50, 50);
 }
-.skillListBar{
-  display: flex;
-  flex-direction: column;
-  margin: 0 3rem;
+.skillListBars {
+    width: 100vw;
+    display: contents;
+    max-width: 60vw;
 }
-.skillBarImage {
+.skillListBar{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  margin: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  flex-wrap: wrap;
+}
+.skillListBar::-webkit-scrollbar {
+  display: none;
+}
+.skillBarImage, .skilllanguages {
   object-fit: cover;
   height: 3rem;
   width: 3rem;
+}
+.skillBarImage{
   margin-right: 2rem;
 }
-.skillBarText > p {
-  font-size: 1rem;
-  font-weight: 200;
+.skillBarChildText {
+  scroll-snap-align: start;
+  border-radius: 30px;
+  min-height: 50px;
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .dropDown{
   margin-left: auto;
@@ -61,6 +84,19 @@
   }
   #skills {
     height: fit-content;
+  }
+  .skillListBar {
+    margin: 0 2rem;
+    width: 20rem;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .skillBarChildText {
+margin: 0 0.5rem;
+padding-left: 2rem;
+font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 500px){
