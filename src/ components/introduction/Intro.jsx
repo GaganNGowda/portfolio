@@ -10,7 +10,18 @@ function Intro() {
         <span className="introText">
           I'm <span className="name"> Gagan</span>
         </span>
-        <span className="description">WebSite Designer</span>
+        <span className="description">         <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  'WebSite Designer'
+                )
+                .pauseFor(1000)
+                .deleteChars(8)
+                .typeString('Developer')
+                .start();
+            }}
+          /></span>
         <p className="introPara">
           <Typewriter
             onInit={(typewriter) => {
@@ -18,7 +29,6 @@ function Intro() {
                 .typeString(
                   "I am a skilled web developer with experience in creating multiple projects"
                 )
-                .changeDelay(2)
                 .start();
             }}
           />

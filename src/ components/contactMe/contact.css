@@ -47,6 +47,9 @@
   margin: 2rem;
   cursor: pointer;
 }
+.submit:hover {
+  padding: 0.85rem 3.6rem;
+}
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +59,10 @@
   height: 3rem;
   width: 3rem;
   margin: 0 0.75rem;
+}
+.link:hover {
+  height: 3.2rem;
+  width: 3.2rem;
 }
 .top{
   border: 1px solid;

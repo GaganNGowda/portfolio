@@ -3,6 +3,7 @@ import "./contact.css";
 import VerticalAlignTopRoundedIcon from "@mui/icons-material/VerticalAlignTopRounded";
 import linkedin from "../../assets/linkedin.png";
 import instagram from "../../assets/instagram.png";
+import git from "../../assets/git2.png";
 import emailjs from "@emailjs/browser";
 import { Tooltip } from "@mui/material";
 import { Link } from "react-scroll";
@@ -104,6 +105,9 @@ function Contact() {
           </a>
           <a href="https://www.instagram.com/gagan.n.gowda/">
             <img src={instagram} alt="instagram" className="link" />
+          </a>
+          <a href="https://github.com/GaganNGowda">
+            <img src={git} alt="instagram" className="link" />
           </a>
         </div>
       </form>

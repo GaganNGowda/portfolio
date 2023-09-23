@@ -51,7 +51,6 @@
   height: 90vh;
   right: 0;
 }
-
 @media screen and (max-width: 1155px) {
   .introContent {
     font-size: 8vw;
@@ -70,11 +69,11 @@
 }
 @media screen and (max-width: 540px) {
   .introContent {
-    font-size: 11vw;
+    font-size: 9vw;
   }
   .description {
     color: burlywood;
-    font-size: 10vw;
+    font-size: 9vw;
   }
   .pic {
     right: -7rem;

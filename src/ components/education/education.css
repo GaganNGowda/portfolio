@@ -44,6 +44,12 @@
   align-items: center;
   justify-content: center;
 }
+.card:hover{
+  font-size: 1.5rem;
+  min-width: 310px;
+  min-height: 310px;
+ 
+}
 .level{
 margin-bottom: 3rem;
 font-size: 20px;

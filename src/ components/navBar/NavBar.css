@@ -39,8 +39,8 @@
   height: 2rem;
 }
 .desktopMenuButton:hover{
-  background: burlywood;
   padding: 0.1rem 1.1rem;
+  box-shadow: 2px 3px rgb(162, 144, 144);
 }
 .desktopMenuImg {
   height: 1rem;
