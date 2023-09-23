@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: center;
 }
-.card:hover{
+.card:hover,.card:focus{
   font-size: 1.5rem;
   min-width: 310px;
   min-height: 310px;

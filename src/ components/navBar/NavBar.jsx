@@ -3,7 +3,8 @@ import './NavBar.css'
 import {Link} from 'react-scroll'
 import logo from '../../assets/logo.png'
 import contact from '../../assets/contact.png'
-import menu from '../../assets/menu.png'
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import MenuIcon from '@mui/icons-material/Menu';
 function NavBar() {
   const [showMenu, setshowMenu] = useState(false)
   return (
@@ -22,7 +23,7 @@ function NavBar() {
               <img src={contact} alt="contactButton" className='desktopMenuImg' />
               Contact Me
       </button>
-           <img src={menu} alt="Menu" className='mobmenu' onClick={()=>setshowMenu(!showMenu)}/>
+          {!showMenu ? <MenuIcon className='mobmenu' fontSize='large' onClick={()=>setshowMenu(!showMenu)}/> : <MenuOpenIcon className='mobmenu' fontSize='large' onClick={()=>setshowMenu(!showMenu)}/> }
           <div className='navMenu' style={{display:showMenu?'flex':'none'}}>
               <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>Home</Link>
               <Link  activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setshowMenu(false)} className='listItem'>About</Link>
