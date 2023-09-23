@@ -57,7 +57,7 @@
 .navMenu{
   position:absolute;
   top: 4rem;
-  right: 2rem;
+  left: 1rem;
   z-index: 999;
   display: flex;
   flex-direction: column;
