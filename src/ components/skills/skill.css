@@ -5,11 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   margin: 0 auto;
   height: 100vh;
-  overflow-y:auto;
+  overflow-y: scroll;
 }
 .skillTitle {
   font-size: 3rem;
@@ -59,5 +58,14 @@
 @media screen and (max-width: 720px) {
   .skillBars {
     max-width: 100%;
+  }
+  #skills {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 500px){
+  #skills {
+    height: fit-content;
+    overflow-y: hidden;
   }
 }

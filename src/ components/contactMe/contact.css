@@ -56,3 +56,11 @@
   width: 3rem;
   margin: 0 0.75rem;
 }
+.top{
+  border: 1px solid;
+  padding: 0.1rem;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
