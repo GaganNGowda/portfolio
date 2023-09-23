@@ -1,7 +1,10 @@
 import React from "react";
 import "./education.css";
+import school from '../../assets/school.png'
+import pre from '../../assets/pre.png'
+import degree from '../../assets/degree.png'
 function Education() {
-  const education={'RLJCS, Kolar':'2003-2015','Excel Academics':'2015-2017','MSRIT':'2017-2021'}
+  const education={'RLJCS, Kolar':{year:'2003-2015',img:school},'Excel Academics':{year:'2015-2017',img:pre},'MSRIT':{year:'2017-2021',img:degree}}
   const levels=['School','Pre-University','Degree']
   return (
     <section id="education">
@@ -11,9 +14,10 @@ function Education() {
       {Object.keys(education).map((row,index)=>{
          return(     
          <article class="card">
+          <img src={education[row].img} alt="" className="education" />
           <span className="level">{levels[index]}</span>
          <h1>{row}</h1>
-         <h4>{education[row]}</h4>
+         <h4>{education[row].year}</h4>
          </article>
        )
       })}
