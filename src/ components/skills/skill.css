@@ -94,9 +94,10 @@
     flex-wrap: wrap;
   }
   .skillBarChildText {
-margin: 0 0.5rem;
+margin: 0 1rem;
 padding-left: 2rem;
-font-size: 0.8rem;
+font-size: 0.6rem;
+white-space: nowrap;
   }
 }
 @media screen and (max-width: 500px){
